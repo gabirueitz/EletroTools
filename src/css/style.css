@@ -11,7 +11,7 @@
 
 html,
 body {
-	height: 100dvh;
+	min-height: 100dvh;
 }
 
 body {
@@ -60,11 +60,12 @@ nav label {
 }
 
 main {
-	height: calc(100% - var(--nav-height));
+	min-height: calc(100% - var(--nav-height));
 }
 
 section {
 	min-height: 100%;
+	height: fit-content;
 	border-radius: 10px;
 	background-color: var(--active-color);
 	padding: 15px;
@@ -72,6 +73,7 @@ section {
 
 section .content {
 	min-height: 100%;
+	height: fit-content;
 	background-color: #fff;
 	border-radius: 5px;
 	padding: 10px;
