@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,268 +7,56 @@
 
 		<link rel="stylesheet" href="./src/css/reset.css" />
 		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/home.css" />
 	</head>
 	<body>
-		<header>
+		<aside>
+			<div class="logo">
+				<img src="./src/img/logo.png" alt="ElectroTools logo" />
+			</div>
+			<div class="menu-button"></div>
+
 			<nav>
-				<ul>
-					<li class="active">
-						<input
-							type="radio"
-							name="navegation"
-							id="homeOption"
-							value="homeSection"
-							checked />
-						<label for="homeOption">Home</label>
-					</li>
-					<li class="">
-						<input
-							type="radio"
-							name="navegation"
-							id="refOption"
-							value="refSection" />
-						<label for="refOption">E. Referência</label>
-					</li>
+				<ul class="menu">
+					<li class="menu-active"><a href="./index.html">Home</a></li>
 					<li>
-						<input
-							type="radio"
-							name="navegation"
-							id="ioOption"
-							value="ioSection" />
-						<label for="ioOption">Força Iônica</label>
+						<a href="./pageTools/reference.html">Eletrodo de referência</a>
 					</li>
-					<li>
-						<input
-							type="radio"
-							name="navegation"
-							id="msOption"
-							value="msSection" />
-						<label for="msOption">Mott-Schottky</label>
-					</li>
-					<li>
-						<input
-							type="radio"
-							name="navegation"
-							id="tafelOption"
-							value="tafelSection" />
-						<label for="tafelOption">Inclinação de Tafel</label>
-					</li>
-					<li>
-						<input
-							type="radio"
-							name="navegation"
-							id="eActiveOption"
-							value="eActiveSection" />
-						<label for="eActiveOption">Área eletroativa</label>
-					</li>
-					<li>
-						<input
-							type="radio"
-							name="navegation"
-							id="ohmicOption"
-							value="ohmicSection" />
-						<label for="ohmicOption">Queda Ôhmica</label>
-					</li>
+					<li><a href="">Mott-Schottky</a></li>
+					<li><a href="">Inclinação de Tafel</a></li>
+					<li><a href="">Área eletroativa</a></li>
+					<li><a href="">Queda ôhmica</a></li>
 				</ul>
 			</nav>
-		</header>
+		</aside>
+
 		<main>
-			<section class="" id="homeSection">
-				<div class="content">
-					<div class="logo">
-						<img src="./src/img/logo.png" alt="ElectroTools Logo" />
-					</div>
-					<div class="paragraphs">
-						<h2>Olá, e bem-vindo(a) ao <strong>EletroTools</strong>!</h2>
+			<div class="content">
+				<h2>Olá, e bem-vindo(a) ao <strong>EletroTools</strong>!</h2>
 
-						<p>
-							Como pesquisador na área de eletroquímica, percebi a necessidade
-							de uma plataforma que centralizasse as ferramentas e os recursos
-							mais úteis para nosso dia a dia no laboratório. Por isso, criei
-							este projeto com a missão de simplificar as tarefas de análise de
-							dados e cálculos que, muitas vezes, consomem tempo valioso.
-						</p>
+				<p>
+					Como pesquisador na área de eletroquímica, percebi a necessidade de
+					uma plataforma que centralizasse as ferramentas e os recursos mais
+					úteis para nosso dia a dia no laboratório. Por isso, criei este
+					projeto com a missão de simplificar as tarefas de análise de dados e
+					cálculos que, muitas vezes, consomem tempo valioso.
+				</p>
 
-						<p>
-							Aqui, você encontrará uma suíte de ferramentas desenvolvida para
-							auxiliar desde a conversão de potenciais de referência até a
-							análise de inclinação de Tafel e Mott-Schottky, tudo com o
-							objetivo de agilizar o seu trabalho.
-						</p>
+				<p>
+					Aqui, você encontrará uma suíte de ferramentas desenvolvida para
+					auxiliar desde a conversão de potenciais de referência até a análise
+					de inclinação de Tafel e Mott-Schottky, tudo com o objetivo de
+					agilizar o seu trabalho.
+				</p>
 
-						<p>
-							Espero que o EletroTools se torne um recurso indispensável para
-							sua pesquisa. Sinta-se à vontade para explorar as ferramentas que
-							preparei para você.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="hidden" id="refSection">
-				<div class="content">
-					<h3>Conversor de Eletrodo de Referência</h3>
-					<p>
-						Converta um potencial eletroquímico medido em relação a um eletrodo
-						de referência para outro.
-					</p>
-					<div class="refConverterDiv">
-						<form action="" id="refConverterForm">
-							<div class="inputSubgroup">
-								<div class="inputGroup">
-									<label for="originV">Potencial (V):</label>
-									<input
-										type="number"
-										name=""
-										id="originV"
-										step="0.01"
-										min="-100"
-										max="100"
-										required />
-								</div>
-								<div class="inputGroup">
-									<label for="solutionPH">pH:</label>
-									<input
-										type="number"
-										name="pH"
-										id="solutionPH"
-										step="0.1"
-										min="0"
-										max="14"
-										required />
-								</div>
-							</div>
-
-							<div class="inputGroup">
-								<label for="originRef">Referência de origem:</label>
-								<select name="originRef" id="originRef" required>
-									<option value="" disabled selected>
-										Selecione uma opção
-									</option>
-									<option value="she">
-										Eletrodo Padrão de Hidrogênio (SHE)
-									</option>
-									<option value="rhe">
-										Eletrodo Reversível de Hidrogênio (RHE)
-									</option>
-
-									<optgroup label="Calomelano">
-										<option value="sce">Saturado (SCE)</option>
-										<option value="calomelano_1m">1,0 M</option>
-										<option value="calomelano_01m">0,1 M</option>
-									</optgroup>
-
-									<optgroup label="Ag/AgCl/KCl">
-										<option value="ag_agcl_sat">Saturado em KCl</option>
-										<option value="ag_agcl_35m">3,5 M em KCl</option>
-										<option value="ag_agcl_1m">1,0 M em KCl</option>
-									</optgroup>
-
-									<optgroup label="Hg/HgO">
-										<option value="hg_hgo">1,0 M em NaOH</option>
-									</optgroup>
-								</select>
-							</div>
-
-							<div class="inputGroup">
-								<label for="newRef">Novo referência:</label>
-								<select name="" id="newRef" required>
-									<option value="" disabled selected>
-										Selecione uma opção
-									</option>
-									<option value="she">
-										Eletrodo Padrão de Hidrogênio (SHE)
-									</option>
-									<option value="rhe">
-										Eletrodo Reversível de Hidrogênio (RHE)
-									</option>
-
-									<optgroup label="Calomelano">
-										<option value="sce">Saturado (SCE)</option>
-										<option value="calomelano_1m">1,0 M</option>
-										<option value="calomelano_01m">0,1 M</option>
-									</optgroup>
-
-									<optgroup label="Ag/AgCl/KCl">
-										<option value="ag_agcl_sat">Saturado em KCl</option>
-										<option value="ag_agcl_35m">3,5 M em KCl</option>
-										<option value="ag_agcl_1m">1,0 M em KCl</option>
-									</optgroup>
-
-									<optgroup label="Hg/HgO">
-										<option value="hg_hgo">1,0 M em NaOH</option>
-									</optgroup>
-								</select>
-							</div>
-							<button id="buttonRefConvert">Converter</button>
-						</form>
-
-						<div class="resultFrame">
-							<p>Resultado:</p>
-							<p id="refResult">0.00 V</p>
-						</div>
-					</div>
-					<div class="notes">
-						<p>
-							<strong>Nota:</strong> Os valores de pH influenciam o potencial
-							apenas do eletrodo RHE.
-						</p>
-
-						<p>
-							<strong>Atenção:</strong> Os valores utilizados nesta ferramenta
-							são baseados em potenciais padrão a 25 °C.
-						</p>
-					</div>
-				</div>
-			</section>
-			<section class="hidden" id="ioSection">
-				<div class="content">
-					<h3>Calculadora de Força Iônica</h3>
-					<img
-						src="./src/img/underConstruction.png"
-						alt="Under Comstruction"
-						class="underConstruction" />
-				</div>
-			</section>
-			<section class="hidden" id="msSection">
-				<div class="content">
-					<h3>Calculadora Mott-Schottky</h3>
-					<img
-						src="./src/img/underConstruction.png"
-						alt="Under Comstruction"
-						class="underConstruction" />
-				</div>
-			</section>
-			<section class="hidden" id="tafelSection">
-				<div class="content">
-					<h3>Calculadora de Tafel</h3>
-					<img
-						src="./src/img/underConstruction.png"
-						alt="Under Comstruction"
-						class="underConstruction" />
-				</div>
-			</section>
-			<section class="hidden" id="eActiveSection">
-				<div class="content">
-					<h3>Calculadora de Área Eletroativa</h3>
-					<img
-						src="./src/img/underConstruction.png"
-						alt="Under Comstruction"
-						class="underConstruction" />
-				</div>
-			</section>
-			<section class="hidden" id="ohmicSection">
-				<div class="content">
-					<h3>Calculadora de Queda Ôhmica</h3>
-					<img
-						src="./src/img/underConstruction.png"
-						alt="Under Comstruction"
-						class="underConstruction" />
-				</div>
-			</section>
+				<p>
+					Espero que o EletroTools se torne um recurso indispensável para sua
+					pesquisa. Sinta-se à vontade para explorar as ferramentas que preparei
+					para você.
+				</p>
+			</div>
 		</main>
 
 		<script src="./src/js/menu.js"></script>
-		<script src="./src/js/refConvert.js"></script>
 	</body>
 </html>
