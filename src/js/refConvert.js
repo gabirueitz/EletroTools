@@ -18,7 +18,7 @@ const buttonRefConvert = document.getElementById("buttonRefConvert");
 const convertedResult = document.getElementById("refResult");
 
 refConverterForm.addEventListener("submit", (event) => {
-	event.preventDefault(); // Impede o recarregamento da página
+	event.preventDefault();
 
 	const potentialOrigem = parseFloat(originVInput.value);
 	const selectedOrigem = originRefSelect.value;

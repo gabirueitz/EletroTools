@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ElectroTools</title>
+
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/ionic.css" />
+
+		<script
+			type="module"
+			src="https://kit.fontawesome.com/01778cdb45.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<aside id="sideMenu"></aside>
+
+		<main>
+			<div id="menu-button"><i class="fa-solid fa-bars"></i></div>
+			<div class="content">
+				<h2>Calculadora de Força Iônica</h2>
+				<p>Calcule a força iônica de uma solução contendo diversos íons.</p>
+				<div class="ionicForceCalc">
+					<form action="">
+						<div class="labels">
+							<p>Nox</p>
+							<p>Concentração</p>
+						</div>
+						<div id="inputs">
+							<div class="ion">
+								<input
+									type="number"
+									name="valence"
+									step="1"
+									min="-9"
+									max="9"
+									required />
+								<input
+									type="number"
+									name="concentration"
+									step="0.0000001"
+									min="0"
+									required />
+							</div>
+							<div class="ion">
+								<input
+									type="number"
+									name="valence"
+									step="1"
+									min="-9"
+									max="9"
+									required />
+								<input
+									type="number"
+									name="concentration"
+									step="0.0000001"
+									min="0"
+									required />
+							</div>
+						</div>
+						<p id="button-add">Adicionar íon</p>
+						<button id="button-calc">Calcular</button>
+						<div id="button-trash" class="hidden">
+							<i class="fa-regular fa-trash-can"></i>
+						</div>
+					</form>
+					<div class="resultFrame">
+						<p>Resultado:</p>
+						<p id="result">---</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="./src/js/menu.js"></script>
+		<script src="./src/js/ionic-force.js"></script>
+	</body>
+</html>

@@ -6,7 +6,7 @@
 	--primary-color: rgb(0, 51, 102);
 	--secondary-color: rgb(173, 198, 224);
 	--highlight-color: rgb(0, 153, 204);
-	--aside-width: 220px;
+	--aside-width: 230px;
 }
 
 html,
@@ -24,7 +24,6 @@ body {
 aside {
 	background-color: var(--primary-color);
 	width: var(--aside-width);
-	position: relative;
 }
 
 .logo {
@@ -62,8 +61,28 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 .menu-active {
 	background-color: rgba(255, 255, 255, 0.1);
+}
+
+#menu-button {
+	position: absolute;
+	background-color: var(--primary-color);
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	border-radius: 0px 10px 10px 0;
+	left: 0px;
+	top: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
 }
