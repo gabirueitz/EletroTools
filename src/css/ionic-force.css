@@ -1,23 +1,17 @@
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 30px;
-}
-
-h2 {
-	text-align: center;
-	font-size: 2rem;
-	margin-bottom: 10px;
-}
-
 .ionicForceCalc {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 15px;
-	position: relative;
 	margin-left: 35px;
+	justify-content: center;
+}
+
+p {
+	text-align: center;
+}
+
+form {
+	position: relative;
 }
 
 .ion {
@@ -97,7 +91,7 @@ form button:active {
 }
 
 .resultFrame p:nth-child(2) {
-	color: var(--active-color);
+	color: var(--primary-color);
 	font-size: 30px;
 	position: absolute;
 	left: 50%;

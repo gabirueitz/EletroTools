@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ElectroTools</title>
+
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/mott-schottky.css" />
+
+		<script
+			type="module"
+			src="https://kit.fontawesome.com/01778cdb45.js"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+	</head>
+	<body>
+		<aside id="sideMenu"></aside>
+
+		<main>
+			<div id="menu-button"><i class="fa-solid fa-bars"></i></div>
+			<div class="content">
+				<h2>Calculadora de Mott-Schottky</h2>
+				<p>
+					Carregue seus dados de Potencial-Capacitância para calcular o
+					potencial de banda plana (V<sub>fb</sub>) e a densidade de portadores
+					(N<sub>d</sub>).
+				</p>
+				<div class="mottSchottkyDiv">
+					<input type="file" id="fileInput" accept=".txt" />
+					<div class="controls">
+						<p>Selelcionar região linear:</p>
+						<div class="rangeControl">
+							<input
+								type="range"
+								name="init"
+								id="init"
+								min="0"
+								max="100"
+								value="0" />
+							<span id="initValue">---</span>
+						</div>
+						<div class="rangeControl">
+							<input
+								type="range"
+								name="end"
+								id="end"
+								min="1"
+								max="100"
+								value="100" />
+							<span id="endValue">---</span>
+						</div>
+					</div>
+					<input type="number" name="" id="" />
+				</div>
+			</div>
+		</main>
+
+		<script src="./src/js/menu.js"></script>
+		<script src="./src/js/mott-schottky.js"></script>
+	</body>
+</html>

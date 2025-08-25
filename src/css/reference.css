@@ -1,17 +1,3 @@
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 30px;
-}
-
-h2 {
-	text-align: center;
-	font-size: 2rem;
-	margin-bottom: 10px;
-}
-
 select,
 input {
 	border: 2px solid var(--primary-color);
@@ -45,6 +31,7 @@ form {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
+	justify-content: center;
 }
 
 form button {
@@ -71,6 +58,7 @@ form button:active {
 
 .resultFrame {
 	background-color: var(--secondary-color);
+	height: 190px;
 	min-width: 240px;
 	padding: 5px;
 	border-radius: 5px;
@@ -84,7 +72,7 @@ form button:active {
 }
 
 .resultFrame p:nth-child(2) {
-	color: var(--active-color);
+	color: var(--primary-color);
 	font-size: 30px;
 	position: absolute;
 	left: 50%;
