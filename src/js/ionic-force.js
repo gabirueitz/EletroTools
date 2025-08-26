@@ -42,7 +42,7 @@ function calculateIonicForce() {
 		const concentration = parseFloat(ions[i].children[1].value);
 		ionicForce += 0.5 * valence * valence * concentration;
 	}
-	return ionicForce;
+	return ionicForce.toExponential(2);
 }
 
 calcButton.addEventListener("click", (event) => {

@@ -11,7 +11,7 @@ const asideContent = `
 					<a href="./reference.html"><i class="fa-solid fa-wrench"></i> Eletrodo de referência</a>
 				</li>
 				<li><a href="./ionic-force.html"><i class="fa-solid fa-wrench"></i> Força iônica</a></li>
-				<li><a href="./under-construction.html"><i class="fa-solid fa-wrench"></i> Mott-Schottky</a></li>
+				<li><a href="./mott-schottky.html"><i class="fa-solid fa-wrench"></i> Mott-Schottky</a></li>
 				<li><a href="./under-construction.html"><i class="fa-solid fa-wrench"></i> Inclinação de Tafel</a></li>
 				<li><a href="./under-construction.html"><i class="fa-solid fa-wrench"></i> Área eletroativa</a></li>
 				<li><a href="./under-construction.html"><i class="fa-solid fa-wrench"></i> Queda ôhmica</a></li>

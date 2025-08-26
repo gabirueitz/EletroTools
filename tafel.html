@@ -22,21 +22,17 @@
 		<main>
 			<div id="menu-button"><i class="fa-solid fa-bars"></i></div>
 			<div class="content">
-				<h2>Calculadora de Mott-Schottky</h2>
+				<h2>Calculadora de Tafel</h2>
 				<p>
-					Carregue seus dados de Potencial-Capacitância para calcular o
-					potencial de banda plana (V<sub>fb</sub>) e a densidade de portadores
-					(N<sub>d</sub>).
+					Carregue sua curva de polarização (Potencial-Corrente) para calcular o
+					a inclinação de Tafel.
 				</p>
-				<div class="mottSchottkyDiv">
+				<div class="tafelDiv">
 					<div class="instructions">
 						<h3>Instruções:</h3>
 						<ol>
 							<li>Carregue um arquivo <i>.txt</i> contendo duas colunas:</li>
-							<p>
-								<b>X</b> é o potencial (E) e <b>Y</b> é o inverso da
-								capacitância ao quadrado (1/C²).
-							</p>
+							<p><b>X</b> é o potencial (E) e <b>Y</b> é a corrente (i).</p>
 
 							<li>
 								Use os controles deslizantes para selecionar a região linear.
@@ -93,11 +89,10 @@
 							</form>
 							<div class="resultFrame">
 								<p>
-									<b>V<sub>fb</sub>:</b><span id="vfb">          </span
-									><span>V</span>
+									<b>V<sub>fb</sub>:</b><span id="vfb"> </span><span>V</span>
 								</p>
 								<p>
-									<b>N<sub>D</sub>:</b><span id="nd">         </span
+									<b>N<sub>D</sub>:</b><span id="nd"> </span
 									><span>cm<sup>-3</sup></span>
 								</p>
 							</div>
