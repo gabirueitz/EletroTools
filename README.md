@@ -8,19 +8,28 @@ Recetemente passou por uma revi~sao de layout para que fosse compátivel com div
 Atualmente, o projeto conta com a seguinte ferramenta pronta para uso:
 
 ### Conversor de Eletrodo de Referência
+
 Uma ferramenta prática para converter potenciais eletroquímicos entre os eletrodos de referência mais comuns (SHE, RHE, Ag/AgCl, SCE, entre outros), com suporte para diferentes concentrações e ajuste de pH para o RHE.
 
-### Calculadora de Força Iônica 
+### Calculadora de Força Iônica
+
 Uma calculadora simples e eficaz para determinar a força iônica de uma solução contendo 2 ou mais íons. Este é um parâmetro fundamental em estudos de eletroquímica e físico-química.
+
+### Análise de Mott-Schottky
+
+Um analisador de Mott-Schottky, a partir dos dados em .txt em formato especifico, gera um grafico interativo para que se selecione a região de analise e faça os calculos apropriados, com possibilidade de fazer o download dos dados analisados.
+
+### Gerador de QrCode
+
+Usando uma biblioteca externa, permite gerar um QrCode personalizado de algum link útil.
 
 ## Próximos Passos
 
 O EletroTools é um projeto em constante evolução. As seguintes ferramentas estão em desenvolvimento e serão implementadas em breve:
 
-* **Análise de Mott-Schottky:** Para a determinação de propriedades de semicondutores.
-* **Inclinação de Tafel:** Para a análise da cinética de reações eletroquímicas.
-* **Área Eletroativa:** Para o cálculo da área de superfície real de um eletrodo.
-* **Queda Ôhmica:** Para a correção da resistência da solução e do eletrodo.
+- **Inclinação de Tafel:** Para a análise da cinética de reações eletroquímicas.
+- **Área Eletroativa:** Para o cálculo da área de superfície real de um eletrodo.
+- **Queda Ôhmica:** Para a correção da resistência da solução e do eletrodo.
 
 ## Como Usar
 
@@ -30,6 +39,6 @@ Para usar as ferramentas, basta acessar a página principal e selecionar a calcu
 
 Este projeto é uma aplicação web construída com as seguintes tecnologias:
 
-* HTML
-* CSS
-* JavaScript
+- HTML
+- CSS
+- JavaScript

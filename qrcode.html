@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ElectroTools</title>
+
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/qrcode.css" />
+
+		<script
+			type="module"
+			src="https://kit.fontawesome.com/01778cdb45.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<aside id="sideMenu"></aside>
+
+		<main>
+			<div id="menu-button"><i class="fa-solid fa-bars"></i></div>
+			<div class="content">
+				<h2>Gerador de QrCode</h2>
+				<p>
+					Crie um QrCode para compartilhar links, textos ou outras informações
+					de forma rápida e prática.
+				</p>
+				<div class="generatorDiv">
+					<form action="" id="qrCodeGenerator">
+						<div class="inputGroup">
+							<label for="linkInput">Link: </label>
+							<input type="text" name="linkInput" id="linkInput" required />
+						</div>
+						<div class="inputGroup">
+							<input
+								type="color"
+								name="qrCodeColor"
+								id="qrCodeColor"
+								value="#000000" />
+							<label for="qrCodeColor">Cor escura</label>
+						</div>
+						<div class="inputGroup">
+							<input
+								type="color"
+								name="backgroundColor"
+								id="backgroundColor"
+								value="#ffffff" />
+							<label for="backgroundColor">Cor clara</label>
+						</div>
+						<button>Gerar QrCode</button>
+					</form>
+					<div class="resultFrame">
+						<div id="qrCodeDiv"></div>
+						<button id="button-download" class="hidden">
+							<i class="fa-solid fa-download"></i> Download do QrCode
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="./src/js/menu.js"></script>
+		<script src="./src/js/jquery.min.js"></script>
+		<script src="./src/js/qrcode.min.js"></script>
+		<script src="./src/js/qrcode.js"></script>
+	</body>
+</html>

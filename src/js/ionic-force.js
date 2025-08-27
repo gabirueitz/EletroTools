@@ -1,5 +1,5 @@
 const addButton = document.getElementById("button-add");
-const calcButton = document.getElementById("button-calc");
+const calcForm = document.getElementById("calcForm");
 const inputsDiv = document.getElementById("inputs");
 const trashButton = document.getElementById("button-trash");
 const ions = document.getElementsByClassName("ion");
@@ -45,7 +45,7 @@ function calculateIonicForce() {
 	return ionicForce.toExponential(2);
 }
 
-calcButton.addEventListener("click", (event) => {
+calcForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 	resultFrame.innerHTML = calculateIonicForce();
 });

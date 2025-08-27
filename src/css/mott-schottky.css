@@ -46,7 +46,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	margin: 0;
 }
 
-form button {
+button {
 	width: 150px;
 	height: 30px;
 	font-weight: 600;
@@ -58,20 +58,20 @@ form button {
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-form button:hover {
+button:hover {
 	color: var(--primary-color);
 	background-color: var(--secondary-color);
 }
 
-form button:active {
+button:active {
 	transform: translateY(3px);
 	box-shadow: none;
 }
 
 .interactiveArea {
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 20px;
 	padding: 5px;
 }
@@ -100,8 +100,18 @@ form button:active {
 }
 
 .chartArea {
-    width: 400px;
-    background-color: #fff;
-    height: 330px;
-	position: relative
+	width: 400px;
+	height: 330px;
+	position: relative;
+}
+
+#button-download {
+	width: 220px;
+	position: absolute;
+	top: -50px;
+	right: 10px;
+}
+
+.hidden {
+	display: none;
 }

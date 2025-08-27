@@ -68,7 +68,7 @@
 									<span id="endValue"></span>
 								</div>
 							</div>
-							<form action="">
+							<form action="" id="formCalc">
 								<div class="inputGroup">
 									<label for="">ε material: </label>
 									<input
@@ -89,20 +89,27 @@
 										min="0"
 										required />
 								</div>
-								<button id="button-calc">Calcular</button>
+								<button type="submit" id="button-calc">Calcular</button>
 							</form>
 							<div class="resultFrame">
 								<p>
-									<b>V<sub>fb</sub>:</b><span id="vfb">          </span
+									<b>V<sub>fb</sub>:</b
+									><span id="vfb"><i style="color: #888"> — </i></span
 									><span>V</span>
 								</p>
 								<p>
-									<b>N<sub>D</sub>:</b><span id="nd">         </span
+									<b>N<sub>D</sub>:</b
+									><span id="nd"><i style="color: #888"> — </i></span
 									><span>cm<sup>-3</sup></span>
 								</p>
 							</div>
 						</div>
-						<div class="chartArea"><canvas id="chartMS"></canvas></div>
+						<div class="chartArea">
+							<canvas id="chartMS"></canvas>
+							<button id="button-download" class="hidden">
+								<i class="fa-solid fa-download"></i> Download dos dados
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>

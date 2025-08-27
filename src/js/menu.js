@@ -15,6 +15,8 @@ const asideContent = `
 				<li><a href="./under-construction.html"><i class="fa-solid fa-wrench"></i> Inclinação de Tafel</a></li>
 				<li><a href="./under-construction.html"><i class="fa-solid fa-wrench"></i> Área eletroativa</a></li>
 				<li><a href="./under-construction.html"><i class="fa-solid fa-wrench"></i> Queda ôhmica</a></li>
+				<hr />
+				<li><a href="./qrcode.html"><i class="fa-solid fa-wrench"></i> Gerador de QrCode</a></li>
 			</ul>
 		</nav>
 `;
